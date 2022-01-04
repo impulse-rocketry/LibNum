@@ -20,6 +20,9 @@
 
 namespace LibNum;
 
+/// <summary>
+/// Library of numerical methods
+/// </summary>
 public static class MatrixUtils {
     /// <summary>
     /// This is a function to solve a matrix of linear equation. It uses the Gauus elimination method as explained in
@@ -95,6 +98,7 @@ public static class MatrixUtils {
     ///
     /// AUTHOR:  Antoine Lefebvre
     /// DATE: February 6, 2000
+    /// </summary>
     /// <remarks>
     /// The number of operation is estimate by n^3/3, about half as many as the Gauss elimination. Should be 
     /// interesting to compare the speed in case of big matrix
@@ -241,6 +245,7 @@ public static class MatrixUtils {
     /// AUTHOR: Antoine Lefebvre
     ///
     /// DATE: February 11
+    /// </summary>
     /// <remarks>
     /// **y must be properly allocated, [number of points]X[neq]
     ///
