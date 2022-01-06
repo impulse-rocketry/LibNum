@@ -18,7 +18,7 @@
 
 // Ported from the original c code by Ben Voß.
 
-namespace LibNum;
+namespace ImpulseRocketry.LibNum;
 
 /// <summary>
 /// Library of numerical methods
