@@ -204,7 +204,7 @@ public static class MatrixUtils {
     public static void PrintSquareMatrix(double[][] matrix, int neq) {
         for (var i = 0; i < neq; i++) {
             for (var j = 0; j < neq; j++) {
-                Console.Write($"[{matrix[i][j]:0.######E+0}] ");
+                Console.Write($"{matrix[i][j]: 0.00000e+00;-0.00000e+00} ");
             }
 
             Console.WriteLine();
@@ -219,7 +219,7 @@ public static class MatrixUtils {
     public static void PrintMatrix(double[][] matrix, int neq) {
         for (var i = 0; i < neq; i++) {
             for (var j = 0; j <= neq; j++) {
-                Console.Write($"[{matrix[i][j]:0.######E+0}] ");
+                Console.Write($"{matrix[i][j]: 0.000000e+00;-0.000000e+00} ");
             }
 
             Console.WriteLine();
@@ -233,7 +233,7 @@ public static class MatrixUtils {
     /// </summary>
     public static void PrintVec(double[] vec, int neq) {
         for (var i = 0; i < neq; i++) {
-            Console.Write($"[{vec[i]:0.######E+0}] ");
+            Console.Write($"{vec[i]: 0.000000e+00;-0.000000e+00} ");
         }
 
         Console.WriteLine();
@@ -311,7 +311,7 @@ public static class MatrixUtils {
                 y[n + 1][i] = y[n][i] + (1.0 / 6.0) * (K1[i] + 2.0 * K2[i] + 2.0 * K3[i] + K4[i]);
             }
 
-            t = t + step;
+            t += step;
         }
     }
 
@@ -319,15 +319,15 @@ public static class MatrixUtils {
     private static int Round(double a) {
         int t = (int)a;
 
-        if (a - (double)t < 0.5) {
+        if (a - t < 0.5) {
             return t;
         }
         
-        if (a - (double)t > 0.5) {
+        if (a - t > 0.5) {
             return t + 1;
         }
 
-        return (t + (t % 2));
+        return t + t % 2;
     }
 
     private static double[][] Make2DArray(int d1, int d2) {
