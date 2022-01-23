@@ -204,7 +204,7 @@ public static class MatrixUtils {
     public static void PrintSquareMatrix(double[][] matrix, int neq) {
         for (var i = 0; i < neq; i++) {
             for (var j = 0; j < neq; j++) {
-                Console.Write($"{matrix[i][j]: 0.00000e+00;-0.00000e+00} ");
+                Console.Write($"{matrix[i][j]: 0.00000E+00;-0.00000E+00} ");
             }
 
             Console.WriteLine();
@@ -219,7 +219,7 @@ public static class MatrixUtils {
     public static void PrintMatrix(double[][] matrix, int neq) {
         for (var i = 0; i < neq; i++) {
             for (var j = 0; j <= neq; j++) {
-                Console.Write($"{matrix[i][j]: 0.000000e+00;-0.000000e+00} ");
+                Console.Write($"{matrix[i][j]: 0.000000E+00;-0.000000E+00} ");
             }
 
             Console.WriteLine();
