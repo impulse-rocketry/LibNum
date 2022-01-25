@@ -21,7 +21,7 @@
     <Summary>Library of numerical methods</Summary>
     <Description>Library of numerical methods</Description>
     <PackageDescription>Library of numerical methods</PackageDescription>
-    <Copyright>Copyright © Antoine Lefebvre 2000, Ben Voß 2022</Copyright>
+    <Copyright>Copyright © 2000 Antoine Lefebvre, Copyright © 2022 Ben Voß</Copyright>
     <Company>ImpulseRocketry</Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RootNamespace>ImpulseRocketry.LibNum</RootNamespace>
@@ -34,6 +34,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="LICENSE" Pack="true" PackagePath="\"/>
     <None Include="README.md" Pack="true" PackagePath="\"/>
     <None Include="Icon.png" Pack="true" PackagePath="\"/>
   </ItemGroup>
